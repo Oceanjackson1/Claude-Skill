@@ -1,63 +1,166 @@
-# Claude & Codex Skills Collection
+# PRD Skills Collection
 
-> 1900+ AI Agent Skills，一键全局接入 Claude Code / VS Code Claude / OpenAI Codex CLI
+> 79 个产品 PRD 撰写专用 AI Agent Skills，覆盖从需求探索到文档交付的完整工作流
 
 ## 什么是 Skills
 
 Skills 是 `SKILL.md` 格式的行为注入文件。当 AI Agent 检测到对话内容匹配 Skill 的描述时，自动将专业规则注入上下文，让 Agent 在特定领域表现得像专家一样。
 
 ```
-你说："帮我写一个 FastAPI 服务"
+你说："帮我写一份 PRD"
   ↓ 自动匹配 description 关键词
-  ↓ 注入 fastapi-pro Skill 的完整规则
-  ↓ Agent 按照最佳实践编写代码
+  ↓ 注入 feature-forge Skill 的完整规则
+  ↓ Agent 按照 EARS 格式生成需求文档、用户故事、验收标准
 ```
 
-## 数量统计
+## 适用场景
 
-| 分类 | 数量 |
-|------|------|
-| Frontend & UI/UX | 636 |
-| Git & Workflow | 243 |
-| AI & Machine Learning | 200 |
-| Security & Penetration Testing | 164 |
-| Backend & API | 116 |
-| Testing & QA | 60 |
-| Cloud Services | 59 |
-| SEO & Marketing | 58 |
-| DevOps & Infrastructure | 55 |
-| Database | 35 |
-| Document Processing | 8 |
-| Mobile Development | 7 |
-| Web Scraping & Automation | 6 |
-| Other | 254 |
-| **Total** | **1901** |
+本合集围绕**产品需求文档（PRD）撰写流程**精选，适合产品经理、创业者、项目负责人在以下场景使用：
 
-## 来源
+- 从零到一定义产品需求
+- 竞品分析与市场调研
+- 用户研究与需求探索
+- 撰写 PRD、用户故事、验收标准
+- 制作路线图、甘特图、里程碑
+- 生成 Pitch Deck、投资备忘录
+- 产品数据分析与 A/B 测试
+- 跨团队文档协作
 
-Skills 汇集自以下项目和官方仓库：
+## Skills 分类（79 个）
 
-| 来源 | 说明 |
-|------|------|
-| [anthropics/skills](https://github.com/anthropics/skills) | Anthropic 官方 Skills |
-| [openai/skills](https://github.com/openai/skills) | OpenAI 官方 Curated Skills |
-| [sickn33/antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills) | 1200+ 社区 Skills 合集 |
-| [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) | Composio 整理的 Skills 列表 |
-| [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) | Claude Code 生态资源 |
-| [VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills) | 跨平台 Agent Skills 索引 |
-| [travisvn/awesome-claude-skills](https://github.com/travisvn/awesome-claude-skills) | 社区 Skills 合集 |
-| [rohitg00/awesome-claude-code-toolkit](https://github.com/rohitg00/awesome-claude-code-toolkit) | Claude Code 工具包 |
-| [affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code) | Claude Code 全资源 |
-| [cloudflare/skills](https://github.com/cloudflare/skills) | Cloudflare Workers/Wrangler |
-| [getsentry/agent-skills](https://github.com/getsentry/agent-skills) | Sentry 错误监控 |
-| [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) | Vercel/Next.js 部署 |
-| [stripe/ai](https://github.com/stripe/ai) | Stripe 支付集成 |
-| [hashicorp/agent-skills](https://github.com/hashicorp/agent-skills) | Terraform IaC |
-| [sanity-io/agent-toolkit](https://github.com/sanity-io/agent-toolkit) | Sanity CMS |
-| [better-auth/skills](https://github.com/better-auth/skills) | Better Auth 认证 |
-| [replicate/skills](https://github.com/replicate/skills) | Replicate AI 模型 |
-| [tinybirdco/tinybird-agent-skills](https://github.com/tinybirdco/tinybird-agent-skills) | Tinybird 数据分析 |
-| [obra/superpowers](https://github.com/obra/superpowers) | Superpowers 插件系统 |
+### 核心 PRD 撰写（5 个）
+
+| Skill | 说明 |
+|-------|------|
+| `feature-forge` | 需求工坊：EARS 格式需求、用户故事、PRD 生成 |
+| `product-manager-toolkit` | PM 工具箱：RICE 优先级、用户访谈、PRD、GTM |
+| `notion-spec-to-implementation` | Notion PRD 转实施计划与任务追踪 |
+| `closed-loop-delivery` | 基于验收标准的闭环交付 |
+| `create-issue-gate` | 带严格验收标准的 Issue 创建 |
+
+### 产品策略与市场分析（9 个）
+
+| Skill | 说明 |
+|-------|------|
+| `market-research` | 市场调研、竞品分析、行业情报 |
+| `market-sizing-analysis` | TAM/SAM/SOM 市场规模分析 |
+| `competitive-landscape` | 竞争格局分析 |
+| `startup-analyst` | 市场规模、财务建模、竞品分析 |
+| `startup-business-analyst-business-case` | 投资级商业案例文档 |
+| `startup-business-analyst-market-opportunity` | TAM/SAM/SOM 市场机会分析 |
+| `launch-strategy` | 产品发布策略、GTM 计划 |
+| `pricing-strategy` | 定价策略与包装设计 |
+| `monetization` | 数字产品变现策略 |
+
+### 头脑风暴与需求探索（6 个）
+
+| Skill | 说明 |
+|-------|------|
+| `brainstorm` | 多轮协作头脑风暴 |
+| `brainstorming` | 创意探索：模糊想法→结构化需求 |
+| `ce-brainstorm` | 需求探索对话→结构化需求文档 |
+| `multi-agent-brainstorming` | 多 Agent 结构化评审验证 |
+| `hypothesis-generation` | 结构化假设生成与验证 |
+| `scientific-brainstorming` | 研究方向创意探索 |
+
+### 用户研究与设计（5 个）
+
+| Skill | 说明 |
+|-------|------|
+| `ui-ux-designer` | 界面设计、线框图、用户研究 |
+| `product-design` | Apple 级产品设计、UX 流程 |
+| `design` | 品牌、设计 Token、UI、Logo、Mockup |
+| `design-system` | 设计系统、Token 架构、组件规范 |
+| `design-orchestration` | 设计工作流编排：头脑风暴→评审→执行 |
+
+### 项目规划与路线图（7 个）
+
+| Skill | 说明 |
+|-------|------|
+| `create-plans` | 层级式项目计划 |
+| `timeline-creator` | 时间线、甘特图、里程碑 |
+| `saas-mvp-launcher` | SaaS MVP 结构化路线图 |
+| `drift-analysis` | 计划偏差分析 |
+| `discover-tasks` | 任务发现与优先级排序 |
+| `scrum-sage` | Scrum Master：冲刺规划、Backlog |
+| `linear-usage` | Linear Issue 管理、冲刺规划 |
+
+### 文档撰写工具（14 个）
+
+| Skill | 说明 |
+|-------|------|
+| `docx` | Word 文档创建与编辑 |
+| `docx-official` | Word 文档（含修订、批注） |
+| `doc-coauthoring` | 结构化文档协作撰写 |
+| `pptx` | PPT 演示文稿（含 Pitch Deck） |
+| `pptx-official` | PPT 演示文稿创建与编辑 |
+| `pdf` | PDF 创建与处理 |
+| `xlsx` | Excel 表格创建与处理 |
+| `spreadsheet` | 电子表格创建与操作 |
+| `slides` | HTML 演示文稿 + Chart.js |
+| `frontend-slides` | 动画 HTML 演示文稿 |
+| `scientific-slides` | 学术报告幻灯片 |
+| `investor-materials` | Pitch Deck、投资备忘录 |
+| `markitdown` | Office 文件转 Markdown |
+| `office-productivity` | 文档、表格、演示文稿工作流 |
+
+### 图表与可视化（6 个）
+
+| Skill | 说明 |
+|-------|------|
+| `flowchart-creator` | 流程图、决策树 |
+| `mermaid-expert` | Mermaid 图表（流程、序列、ER） |
+| `markdown-mermaid-writing` | Markdown + Mermaid 文档 |
+| `architecture-diagram-creator` | 架构图 |
+| `d3js-visualization` | D3.js 交互式数据可视化 |
+| `generate-image` | AI 图片生成（流程图、图表） |
+
+### 产品数据分析（6 个）
+
+| Skill | 说明 |
+|-------|------|
+| `analytics-product` | 产品分析：PostHog/Mixpanel/OKR/漏斗 |
+| `kpi-dashboard-design` | KPI 仪表板设计 |
+| `ab-test-setup` | A/B 测试结构化指南 |
+| `content-experimentation-best-practices` | 内容实验与 A/B 测试 |
+| `google-analytics-automation` | Google Analytics 自动化 |
+| `mixpanel-automation` | Mixpanel 漏斗与分群分析 |
+
+### 协作工具集成（7 个）
+
+| Skill | 说明 |
+|-------|------|
+| `figma` | Figma 设计获取与代码转换 |
+| `figma-implement-design` | Figma 设计→代码 |
+| `figma-automation` | Figma 自动化操作 |
+| `google-slides-automation` | Google Slides 自动化 |
+| `atlassian-mcp` | Jira/Confluence 集成 |
+| `notion-knowledge-capture` | Notion 知识捕获 |
+| `notion-meeting-intelligence` | Notion 会议纪要 |
+| `notion-research-documentation` | Notion 研究文档 |
+
+### 撰写与沟通（9 个）
+
+| Skill | 说明 |
+|-------|------|
+| `copywriting` | 营销文案撰写 |
+| `content-creator` | 内容创作策略 |
+| `content-marketer` | 内容营销策略 |
+| `internal-comms` | 内部沟通文案 |
+| `internal-comms-anthropic` | 内部沟通（社区版） |
+| `brand-guidelines` | 品牌指南 |
+| `brand` | 品牌标识设计 |
+| `professional-proofreader` | 专业校对 |
+| `beautiful-prose` | 优美文案撰写 |
+
+### 其他辅助（5 个）
+
+| Skill | 说明 |
+|-------|------|
+| `data-storytelling` | 数据叙事 |
+| `theme-factory` | 文档/幻灯片主题样式 |
+| `canvas-design` | Canvas 视觉设计 |
+| `algorithmic-art` | 算法艺术生成 |
 
 ## 快速安装
 
@@ -78,8 +181,6 @@ bash setup.sh
 
 ## 手动安装
 
-如果不想运行脚本，手动执行：
-
 ```bash
 # Claude Code / VS Code Claude
 ln -sf "$(pwd)" ~/.claude/skills
@@ -96,71 +197,57 @@ Skills 会根据对话内容自动激活，无需任何操作：
 
 | 你说的话 | 触发的 Skill | 效果 |
 |---------|-------------|------|
-| "帮我写一个 React 组件" | `react-patterns` | 注入 React Hooks、组合模式最佳实践 |
-| "commit 代码" | `commit` | 按照 Conventional Commit 格式提交 |
-| "部署到 Vercel" | `deploy-to-vercel` | Vercel 部署最佳实践 |
-| "爬取这个网站" | `scrapling-official` | 反爬绕过 + 自适应爬虫 |
-| "做一个安全审计" | `security-audit` | OWASP Top 10 检查清单 |
+| "帮我写一份 PRD" | `feature-forge` | EARS 格式需求 + 用户故事 + 验收标准 |
+| "做个竞品分析" | `market-research` | 结构化竞品调研报告 |
+| "TAM 有多大" | `market-sizing-analysis` | TAM/SAM/SOM 市场规模计算 |
+| "做个 Pitch Deck" | `pptx` + `investor-materials` | 投资级演示文稿 |
+| "帮我头脑风暴一下" | `brainstorming` | 结构化创意探索 |
+| "画个流程图" | `flowchart-creator` | HTML 流程图 + 决策树 |
+| "写个产品发布计划" | `launch-strategy` | GTM 策略 + 发布路线图 |
 
 ### 手动触发
 
 在对话中输入 `/skill-name` 强制激活：
 
 ```
-/commit              — 规范化提交
-/react-patterns      — React 最佳实践
-/fastapi-pro         — FastAPI 专家模式
-/kubernetes-architect — K8s 架构设计
-/security-audit      — 安全审计
+/feature-forge              — PRD 需求工坊
+/product-manager-toolkit    — PM 全套工具
+/market-research            — 市场调研
+/brainstorming              — 头脑风暴
+/timeline-creator           — 路线图/甘特图
+/slides                     — HTML 演示文稿
+/investor-materials         — Pitch Deck
 ```
 
-## 架构
+## 兼容平台
 
 ```
 ~/.claude/skills  ──┐
-                    ├──→  ~/claude-skills/（1901 个 SKILL.md）
+                    ├──→  ~/claude-skills/（79 个 PRD Skills）
 ~/.codex/skills   ──┘
                          ↑
                     一份文件，三端共享
                     Claude Code / VS Code / Codex CLI
 ```
 
-### 触发流程
+## PRD 撰写工作流示例
 
 ```
-┌─ 启动时 ──────────────────────────────┐
-│  索引所有 SKILL.md 的 name+description │
-│  （只读 frontmatter，不读正文）         │
-└───────────────────────────────────────┘
-                  ↓
-┌─ 对话中 ──────────────────────────────┐
-│  用户消息 ←→ 匹配 description 关键词   │
-│  或用户输入 /skill-name               │
-└───────────────────────────────────────┘
-                  ↓
-┌─ 激活 ────────────────────────────────┐
-│  注入 SKILL.md 完整正文到上下文         │
-│  Agent 按照正文中的规则和指令行动       │
-└───────────────────────────────────────┘
-```
-
-## 目录结构
-
-```
-claude-skills/
-├── setup.sh                    # 一键安装脚本
-├── README.md                   # 本文件
-├── .system/                    # Codex CLI 内置技能
-│   ├── openai-docs/
-│   ├── skill-creator/
-│   └── skill-installer/
-├── react-patterns/             # 示例：React 最佳实践
-│   └── SKILL.md
-├── fastapi-pro/                # 示例：FastAPI 专家
-│   └── SKILL.md
-├── commit/                     # 示例：规范化提交
-│   └── SKILL.md
-└── ... (1901 个 skill 目录)
+1. 需求探索        /brainstorming → /ce-brainstorm
+                    ↓
+2. 市场验证        /market-research → /market-sizing-analysis → /competitive-landscape
+                    ↓
+3. 需求定义        /feature-forge → /product-manager-toolkit
+                    ↓
+4. 文档撰写        /docx 或 /pptx → /doc-coauthoring
+                    ↓
+5. 设计协作        /figma → /ui-ux-designer → /design-system
+                    ↓
+6. 项目规划        /create-plans → /timeline-creator → /linear-usage
+                    ↓
+7. 数据验证        /ab-test-setup → /analytics-product → /kpi-dashboard-design
+                    ↓
+8. 发布上线        /launch-strategy → /investor-materials
 ```
 
 ## SKILL.md 格式
@@ -179,27 +266,25 @@ description: "触发条件描述。当对话匹配这些关键词时自动激活
 激活后，完整正文会被注入到 Agent 的上下文中。
 ```
 
-- `name`：Skill 名称，也是手动触发时的 `/name`
-- `description`：触发条件，Agent 根据这个字段决定是否自动激活
-
 ## Token 开销
 
 | 项目 | 开销 |
 |------|------|
-| 元数据索引（固定） | ~84K tokens（占 1M 上下文的 8.4%） |
+| 79 个 Skill 元数据索引（固定） | ~4K tokens（占 1M 上下文的 0.4%） |
 | 单个 Skill 正文（按需） | ~2K tokens（中位数） |
-| 典型场景（3 个 Skill） | ~91K tokens |
+| 典型场景（触发 3 个） | ~10K tokens |
 
-Skills 不会全部同时加载——只有被匹配到的才会注入正文。
+相比全量 1900+ Skills 的 84K 固定开销，PRD 精选版仅 4K，上下文利用率提升 20 倍。
 
 ## 贡献
 
-欢迎提交 PR 添加新的 Skills。每个 Skill 需要：
+欢迎提交 PR 添加新的 PRD 相关 Skills。每个 Skill 需要：
 
 1. 创建以 skill 名称命名的目录
 2. 在目录中创建 `SKILL.md` 文件
 3. 包含有效的 frontmatter（`name` + `description`）
 4. 正文中写明 Agent 需要遵循的规则
+5. 确保与产品 PRD 撰写流程直接相关
 
 ## License
 
